@@ -95,10 +95,19 @@ input:focus {
   height: 40px;
 }
 
-.nav-links a {
-  font-size: 16px;
+.border_wrapper {
+  border: 1.5px solid rgb(14, 145, 215);
+  border-radius: 5px;
+}
 
+.nav-links a {
+  font-size: 12px;
   text-decoration: none;
+  padding: 2px;
+}
+.btn {
+  font-size: 12px;
+  margin-top: 3px;
 }
 
 .social-icons a {

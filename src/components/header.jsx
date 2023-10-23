@@ -49,7 +49,7 @@ const Header = () => {
           <div className="row">
             <div className="col-3 d-flex align-items-center mt-3"></div>
             <div className=" nav-links  col-4 d-flex align-items-center justify-content-between m-auto text-center">
-              <div className="border-primary border p-1">
+              <div className="border_wrapper">
                 <Link
                   to={"/samsung"}
                   className={location.pathname === "/" ? "active" : "inactive"}
@@ -58,14 +58,14 @@ const Header = () => {
                 </Link>
                 <button className="btn">X</button>
               </div>
-              <div className="border-primary border p-1">
+              <div className="border_wrapper">
                 <Link
-                  to={"shop"}
+                  to={"apple"}
                   className={
                     location.pathname === "/shop" ? "active" : "inactive"
                   }
                 >
-                  Shop
+                  Apple
                 </Link>
                 <button className="btn">X</button>
               </div>
