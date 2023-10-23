@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 :root {
   --primary: #00a97f;
@@ -62,8 +62,15 @@ button {
   color: white;
 }
 
+.like {
+  width: 30px;
+}
+
 .header-top-strip a {
   color: var(--primary1);
+}
+.input-group {
+  width: 450px;
 }
 
 .input-group button {
@@ -96,10 +103,6 @@ input:focus {
 
 .social-icons a {
   color: var(--search);
-}
-
-.header-upper {
-  background: var(--lighter2);
 }
 
 .navbar-top {
@@ -583,8 +586,8 @@ input:focus {
   background-color: var(--lighter1);
 }
 #basic-addon2 {
-  background-color: transparent;
   text-align: center;
+  color: white;
   line-height: 0;
   transition: 0.5s ease;
   font-size: 16px;

@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
-import Hero from "../components/hero";
-import FeaturedProducts from "../components/featuredProducts";
-import NewArrival from "../components/newArrival";
-import Blogs from "../components/blogs";
-import img1 from "../assets/images/banner/b17.jpg";
-import img2 from "../assets/images/banner/b10.jpg";
+// import { Link } from "react-router-dom";
+// import Hero from "../components/hero";
+// import FeaturedProducts from "../components/featuredProducts";
+// import NewArrival from "../components/newArrival";
+// import Blogs from "../components/blogs";
+// import img1 from "../assets/images/banner/b17.jpg";
+// import img2 from "../assets/images/banner/b10.jpg";
 
 const Home = () => {
   return (
     <>
-      <section className="banner mb-3">
+      <div>
+        <h1>Hello</h1>
+      </div>
+      {/* <section className="banner mb-3">
         <div className="container-xxl">
           <div className="row">
             <div className="banner-details p-5 d-flex flex-column align-items-start justify-content-center">
@@ -137,7 +140,7 @@ const Home = () => {
         </div>
 
         <section />
-      </section>
+      </section> */}
     </>
   );
 };
