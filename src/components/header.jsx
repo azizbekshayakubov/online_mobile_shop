@@ -44,14 +44,14 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <header className="header-upper ">
+      <header className="header-upper mt-3 ">
         <div className="container-xxl">
           <div className="row">
             <div className="col-3 d-flex align-items-center mt-3"></div>
             <div className=" nav-links  col-4 d-flex align-items-center justify-content-between m-auto text-center">
               <div className="border_wrapper">
                 <Link
-                  to={"/samsung"}
+                  to={"samsung"}
                   className={location.pathname === "/" ? "active" : "inactive"}
                 >
                   Samsung

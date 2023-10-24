@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 
 import { AiFillTwitterCircle } from "react-icons/ai";
-import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
-import google from "../assets/images/pay/play.jpg";
-import app from "../assets/images/pay/app.jpg";
-import pay from "../assets/images/pay/pay.png";
+import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
+import google from "../assets/images/pay/play.png";
+import app from "../assets/images/pay/app.png";
+
+import logo from "../assets/images/logo.png";
 
 const Footer = () => {
   return (
@@ -12,103 +13,89 @@ const Footer = () => {
       <footer className="footer p-5">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12 d-flex">
-              <div className="col-8 text-center mb-3">
-                <h3>Sign Up for a newsletter</h3>
-                <p>
-                  Get email updates on all our <Link>Special offers</Link>{" "}
-                </p>
+            <div className="col-2 d-flex flex-column">
+              <div className="">
+                <Link to="/">
+                  <img src={logo} alt="" className="img-fluid logo" />
+                </Link>
               </div>
-              <div className="col-4">
-                <div className="input-group mb-3 text-center">
-                  <input
-                    type="text"
-                    className="form-control p-2"
-                    placeholder="Enter Email here"
-                    aria-label="Recipient's username"
-                    aria-describedby="basic-addon2"
-                  />
-                  <button className="input-group-text" id="basic-addon2">
-                    Subscribe
-                  </button>
-                </div>
-              </div>
-            </div>
-            <hr className="m-3" />
-            <div className="col-4 d-flex flex-column">
-              <h3 className="mb-4">Contact us</h3>
               <div className="footer-details">
-                <p className="mb-3">
-                  <b>Address:</b> Thika town,Naltex building, 2nd floor
+                <p className="fs-8 my-3">
+                  Best information about the company gies here but now lorem
+                  ipsum is
                 </p>
-                <p className="mb-3">
-                  <b>Phone:</b>
-                  <a href="tel:+998901230767">Call us +998901230767 </a>
-                </p>
-                <p className="mb-5">
-                  <b>Hours Open:</b> From 8 A.m to 5 P.m
-                </p>
-                <p className="mb-3">
-                  <b>Follow Us </b>
-                </p>
-                <div className="col-4 social-icons mb-3 d-flex justify-content-around">
+                <div className="col-10 social-icons d-flex justify-content-around mb-3">
                   <Link>
-                    <AiFillTwitterCircle className="fs-4" />
+                    <BsFacebook className="fs-4 mx-1" />
                   </Link>
                   <Link>
-                    <BsFacebook className="fs-4" />
+                    <AiFillTwitterCircle className="fs-4 mx-1" />
                   </Link>
                   <Link>
-                    <BsInstagram className="fs-4" />
+                    <BsLinkedin className="fs-4 mx-1 " />
                   </Link>
+
                   <Link>
-                    <BsLinkedin className="fs-4" />
+                    <BsInstagram className="fs-4 mx-1" />
+                  </Link>
+
+                  <Link>
+                    <BsYoutube className="fs-4" />
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="col-2">
-              <h3 className="mb-4">About</h3>
+            <div className="col-2 px-4">
+              <h3 className="fw-bolder  mb-4">About</h3>
               <div className="footer-details d-flex flex-column">
                 <Link className="mb-3">About Us</Link>
-                <Link className="mb-3">Delivery</Link>
-                <Link className="mb-3">Privacy Policy</Link>
-                <Link className="mb-3">Tax Policy</Link>
-                <Link className="mb-3">Fee Policy</Link>
-                <Link className="mb-3">Terms & Conditions</Link>
+                <Link className="mb-3">Find store</Link>
+                <Link className="mb-3">Categories</Link>
+                <Link className="mb-3">Blogs</Link>
               </div>
             </div>
-            <div className="col-2">
-              <h3 className="mb-4">Account</h3>
+            <div className="col-2 px-4">
+              <h3 className="fw-bolder mb-4">Partnership</h3>
               <div className="footer-details d-flex flex-column">
-                <Link className="mb-3">Profile</Link>
-                <Link className="mb-3">View Cart</Link>
-                <Link className="mb-3">My Orders</Link>
-                <Link className="mb-3">My Wishlist</Link>
-                <Link className="mb-3">Help</Link>
-                <Link className="mb-3">Coupons</Link>
+                <Link className="mb-3">About Us</Link>
+                <Link className="mb-3">Find store</Link>
+                <Link className="mb-3">Categories</Link>
+                <Link className="mb-3">Blogs</Link>
               </div>
             </div>
-            <div className="col-4">
-              <h3 className="mb-3">Install App</h3>
+            <div className="col-2 px-4">
+              <h3 className="fw-bolder mb-4">Information</h3>
+              <div className="footer-details d-flex flex-column">
+                <Link className="mb-3">Help Center</Link>
+                <Link className="mb-3">Money Refund</Link>
+                <Link className="mb-3">Shipping</Link>
+                <Link className="mb-3">Contact us</Link>
+              </div>
+            </div>
+            <div className="col-2 px-4">
+              <h3 className="fw-bolder mb-4">For users</h3>
+              <div className="footer-details d-flex flex-column">
+                <Link className="mb-3">Login</Link>
+                <Link className="mb-3">Register</Link>
+                <Link className="mb-3">Settings</Link>
+                <Link className="mb-3">My Orders</Link>
+              </div>
+            </div>
+            <div className="col-2 px-4">
+              <h3 className="fw-bolder px-4">Get app</h3>
               <div className="footer-details">
-                <p>Available On Google Play Services & App Store</p>
-                <div className="pay d-flex">
-                  <div className="mx-2">
-                    <Link>
-                      <img src={google} alt="" className="img-fluid p-4 my-3" />
-                    </Link>
-                  </div>
+                <div className="pay">
                   <div>
                     <Link>
-                      <img src={app} alt="" className="img-fluid p-4 my-3" />
+                      <img src={app} alt="" className="p-4" />
                     </Link>
                   </div>
                 </div>
-                <p className="mb-3">Payment Metgods</p>
-                <Link className="pay">
-                  <img src={pay} alt="" className="img-fluid p-3 " />
-                </Link>
+                <div className="pay">
+                  <Link>
+                    <img src={google} alt="" className="p-4" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
